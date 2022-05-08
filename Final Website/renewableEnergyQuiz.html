@@ -1,0 +1,176 @@
+<html>
+    <head>
+        <title>Renewable Energy</title>
+    </head>
+    <style>
+
+        .parent 
+          {
+            background-color: yellow;
+        }
+
+        .child
+          {
+            display: inline;
+            vertical-align: middle;
+        }
+
+        #body
+          {
+            background-color: grey;
+        }
+        #navbar
+          {
+            font-size: 40;
+            margin-left: 550px;
+            background-color: grey
+        }
+        
+        #navbar a
+          {
+            color: black;
+            text-decoration: none;
+
+        }
+        #navbar a:hover
+          {
+            background-color: rgb(225, 2, 255);
+            font-style: italic;
+ 
+        }
+        #title
+          {  
+            background-color: yellow;
+            font-size: 45;
+        }
+        #answerButton
+          {
+            background-color:yellow;
+            font-size: 30;
+            color: black;
+            border: solid rgb(225, 2, 255);
+
+        }
+        #answerButton:hover
+          {
+            background-color: grey;
+            font-size: 30;
+            color: #75E6DA;
+            border: solid rgb(225, 2, 255);
+        }
+        
+        #quiz
+        {
+          font-size: 30;
+            background-color: blueviolet;
+            margin-top: 10;
+            margin-left: 10;
+            background-color:rgb(2, 204, 255);
+            margin-right: 100;
+        }
+    </style>
+    <body id="body">
+
+
+      
+        <div class="parent">
+          <div id="title" class="child">Renewable Energy</div>
+          <div id="navbar" class="child">
+            <a href="renewableEnergyWebsite.html" target="blank">What is it?</a>
+            <a href="RenewableEnergySupport.html" target="blank">How to Support</a>
+            <a href="RenewableEnergyQuiz.html" target="blank">Quiz</a>
+          </div>
+        </div>
+
+        <div id="quiz">
+        <h3>
+          What is the safest and cleanest source of energy?
+        </h3>
+        <div id="q1a">
+
+        </div>
+        <input type="radio" id="a1.1" name="q1">
+        <label for="a.1.">Solar</label>
+        <input type="radio" id="a1.2" name="q1">
+        <label for="a1.2">Hydropower</label>
+        <input type="radio" id="a1.3" name="q1">
+        <label for="a1.3">Oil</label>
+        <h3>
+          What is the deadliest source of energy?
+        </h3>
+        <div id="q2a">
+
+        </div>
+        <input type="radio" id="a2.1" name="q2">
+        <label for="a2.1">Wind</label>
+        <input type="radio" id="a2.2" name="q2">
+        <label for="a2.2">Biomass</label>
+        <input type="radio" id="a2.3" name="q2">
+        <label for="a2.3">Coal</label>
+        <h3>
+            Why should we change to Renewable Energy sources? (more than one choice is correct)
+        </h3>
+        <div id="q3a">
+
+        </div>
+        <input type="radio" id="a3.1" name="q3">
+        <label for="a3.1">It would make our community safer</label>
+        <input type="radio" id="a3.2" name="q3">
+        <label for="a3.2">We shouldn't</label>
+        <input type="radio" id="a3.3" name="q3">
+        <label for="a3.3">It would make our environment safer</label>
+
+
+        <br><br>
+        <button id="answerButton" onclick="showAnswers();">Check your answers</button>
+    </div>
+    <script>
+       function showAnswers(){
+          if(document.getElementById("a1.1").checked == true)
+          {
+               document.getElementById("q1a").innerHTML = "CORRECT!";
+               document.getElementById("q1a").style = "color: green;";
+           }
+          if(document.getElementById("a1.2").checked == true)
+          {
+               document.getElementById("q1a").innerHTML = "INCORRECT!";
+               document.getElementById("q1a").style = "color: red;";
+          }
+          if(document.getElementById("a1.3").checked == true)
+          {
+               document.getElementById("q1a").innerHTML = "INCORRECT!";
+               document.getElementById("q1a").style = "color: red;";
+          }
+          if(document.getElementById("a2.1").checked == true)
+          {
+              document.getElementById("q2a").innerHTML = "INCORRECT!";
+              document.getElementById("q2a").style = "color: red;";
+          }
+           if(document.getElementById("a2.2").checked == true)
+           {
+               document.getElementById("q2a").innerHTML = "INCORRECT!";
+               document.getElementById("q2a").style = "color: red;";
+          }
+           if(document.getElementById("a2.3").checked == true)
+           {
+               document.getElementById("q2a").innerHTML = "CORRECT!";
+              document.getElementById("q2a").style = "color: green;";
+          }
+           if(document.getElementById("a3.1").checked == true)
+           {
+               document.getElementById("q3a").innerHTML = "CORRECT!";
+              document.getElementById("q3a").style = "color: green;";
+           }
+          if(document.getElementById("a3.2").checked == true)
+          {
+              document.getElementById("q3a").innerHTML = "INCORRECT!";
+              document.getElementById("q3a").style = "color: red;";
+          }
+          if(document.getElementById("a3.3").checked == true)
+          {
+             document.getElementById("q3a").innerHTML = "CORRECT!";
+             document.getElementById("q3a").style = "color: green;";
+          }
+      }
+    </script>
+</html>
