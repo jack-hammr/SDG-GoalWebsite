@@ -1,0 +1,162 @@
+<html>
+    <head>
+        <title>Renewable Energy</title>
+    </head>
+    <style>
+         .tab
+          {
+            background-color:rgb(225, 2, 255);
+        }
+
+        .tab button 
+          {
+            background-color:rgb(225, 2, 255);
+        }
+
+        .tab button:hover
+          {
+            background-color:rgb(2, 204, 255);
+        }
+
+        .hide
+          {
+          display: none;
+        }
+        .show
+          {
+          display: active;
+
+        }
+
+        .parent 
+          {
+            background-color: yellow;
+        }
+
+        .child
+          {
+            display: inline;
+            vertical-align: middle;
+        }
+
+        #button
+          {
+            font-size: 40;
+        }
+        #buttons
+         {
+          margin-top: 10;
+
+          background-color: transparent;
+        }
+        #tab1
+          {
+            font-size: 40;
+            background-color: blueviolet;
+            background-color:rgb(2, 204, 255);
+            margin-top: 10;
+            margin-right: 400;
+        }
+        #tab2
+          {
+            font-size: 40;
+            background-color: blueviolet;
+            background-color:rgb(2, 204, 255);
+            margin-top: 10;
+            margin-right: 500;
+
+
+        }
+        
+        #tab3
+          {
+            font-size: 40;
+            background-color: blueviolet;
+            margin-top: 10;
+            background-color:rgb(2, 204, 255);
+            margin-right: 500;
+       }
+        #body
+          {
+            background-color: grey;
+        }
+        #navbar
+          {
+            font-size: 40;
+            margin-left: 550px;
+            background-color: grey
+        }
+        
+        #navbar a
+          {
+            color: black;
+            text-decoration: none;
+
+        }
+        #navbar a:hover
+          {
+            background-color: rgb(225, 2, 255);
+            font-style: italic;
+ 
+        }
+        #title
+          {  
+            background-color: yellow;
+            font-size: 45;
+        }
+
+
+    </style>
+    <body id="body">
+
+      <div class="parent">
+        <div id="title" class="child">Renewable Energy</div>
+        <div id="navbar" class="child">
+          <a href="renewableEnergyWebsite.html" target="blank">What is it?</a>
+          <a href="RenewableEnergySupport.html" target="blank">How to Support</a>
+          <a href="RenewableEnergyQuiz.html" target="blank">Quiz</a>
+        </div>
+      </div>
+      <div id="buttons" class="tab">
+        <button id="button"  onClick="changeTab1()">Renewable World</button>
+        <button id="button"  onClick="changeTab2()">TREC</button>
+
+      </div>
+            
+        <div id="tab1" class="shows">
+            Renewable World is a non-profit organization that aims to help give renewable energy sources to impoverished areas around the world. Since 2008, they have help over 60,000 people gain access to renewable energy. click 
+            <a href="https://renewable-world.org/">here</a>
+            to find out more
+        </div>
+    
+              
+        <div id="tab2" class="hide">
+            TREC is a non-profic organization that aims to help build up community owned renewable energy. they are also the parent company of many other renewable energy programs in canada like SolarShare and Relay Education. click
+            <a href="https://www.trec.on.ca/">here</a>
+            to find out more
+        </div>
+
+
+
+    </body>
+    <script>
+        function changeTab1() 
+          {
+          document.getElementById("tab1").className = "show";
+          document.getElementById("tab2").className = "hide";
+          document.getElementById("tab3").className = "hide";
+        }
+        function changeTab2() 
+          {
+          document.getElementById("tab1").className = "hide";
+          document.getElementById("tab2").className = "show";
+          document.getElementById("tab3").className = "hide";
+        }
+        function changeTab3() 
+          {
+          document.getElementById("tab1").className = "hide";
+          document.getElementById("tab2").className = "hide";
+          document.getElementById("tab3").className = "show";
+        }
+      </script>
+</html>
